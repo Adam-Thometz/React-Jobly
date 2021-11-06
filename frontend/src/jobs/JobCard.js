@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from "react";
 import UserContext from "../utils/UserContext";
+import './JobCard.css'
 
 function JobCard({id, title, companyName, salary, equity}) {
   const {apply, hasApplied} = useContext(UserContext)
@@ -16,7 +17,7 @@ function JobCard({id, title, companyName, salary, equity}) {
   }
 
   return (
-    <div>
+    <div className="JobCard">
       <h4>{title}</h4>
       {companyName ? <h6>{companyName}</h6> : null}
 

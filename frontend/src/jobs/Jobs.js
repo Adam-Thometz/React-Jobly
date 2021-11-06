@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import JoblyApi from "../utils/api";
 import JobCard from "./JobCard";
 import SearchBar from "../common-components/SearchBar";
 import LoadingSpinner from "../common-components/LoadingSpinner";
-import UserContext from "../utils/UserContext";
 
 function Jobs() {
   const [jobs, setJobs] = useState([])

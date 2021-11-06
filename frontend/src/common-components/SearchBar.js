@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Form, FormGroup, Input, Button} from 'reactstrap'
+import './SearchBar.css'
 
 function SearchBar({search}) {
   const [searchTerm, setSearchTerm] = useState("")
@@ -14,7 +15,7 @@ function SearchBar({search}) {
   }
 
   return (
-    <Form onClick={handleSubmit}>
+    <Form className="SearchBar" inline={true} onClick={handleSubmit}>
       <FormGroup>
         <Input
           name="searchTerm"

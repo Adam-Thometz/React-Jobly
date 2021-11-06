@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import UserContext from '../utils/UserContext'
+import './Home.css'
 
 function Home() {
   const {currUser} = useContext(UserContext)
@@ -12,7 +13,7 @@ function Home() {
   )
 
   return (
-    <div>
+    <div className="Home">
       <h1>Jobly</h1>
       <h4>All the jobs in one, convenient place.</h4>
       {currUser ? 

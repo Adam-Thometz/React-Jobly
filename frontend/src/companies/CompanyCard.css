@@ -1,0 +1,23 @@
+.CompanyCard {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px 60px;
+  margin: 20px 15%;
+}
+
+.CompanyCard:hover {
+  background-color: rgb(109, 70, 70);
+  cursor: pointer;
+}
+
+.CompanyCard a {
+  color: rgb(255, 221, 221);
+}
+
+.CompanyCard img {
+  height: 50px;
+  width: 75px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}

@@ -1,0 +1,26 @@
+.JoblyNavbar {
+  background-color: rgb(231, 245, 40);
+}
+
+.JoblyNavbar-item {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: rgb(58, 19, 19);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.JoblyNavbar-link {
+  color: rgb(255, 221, 221);
+}
+
+.JoblyNavbar-link.active {
+  color: #f0f2f5;
+  font-weight: bold;
+}
+
+.JoblyNavbar-main {
+  font-size: 1.5rem;
+  color: rgb(58, 19, 19);
+}

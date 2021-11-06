@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {useParams} from 'react-router'
 import JobCard from "../jobs/JobCard";
 import JoblyApi from "../utils/api";
+import './Company.css'
 
 function Company() {
   const {handle} = useParams()
@@ -16,7 +17,7 @@ function Company() {
   }, [handle])
 
   return (
-    <div>
+    <div className="Company">
       <h1>{company.name}</h1>
       <p>{company.description}</p>
       {company.jobs ?
